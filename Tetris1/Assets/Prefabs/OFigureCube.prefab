@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 447942918892283890}
   - component: {fileID: 447942918892283891}
   - component: {fileID: 447942918892283892}
+  - component: {fileID: 2282370123304121064}
   m_Layer: 0
   m_Name: OFigureCube
   m_TagString: Untagged
@@ -122,6 +123,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 11400000, guid: d8bfa9b6b57bc7446af48fa31d00e36c, type: 2}
+--- !u!114 &2282370123304121064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447942918892283893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c2646b3c2d55042b0e8ad113001a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447942919393814144
 GameObject:
   m_ObjectHideFlags: 0

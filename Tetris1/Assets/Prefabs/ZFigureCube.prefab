@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1868960504104102539}
   - component: {fileID: 6819756771056660602}
   - component: {fileID: 3464245079198376864}
+  - component: {fileID: 6329453494867613187}
   m_Layer: 0
   m_Name: ZFigureCube
   m_TagString: Untagged
@@ -122,6 +123,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6329453494867613187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3464245079198376867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c2646b3c2d55042b0e8ad113001a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3464245079207378795
 GameObject:
   m_ObjectHideFlags: 0
