@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
     public float HorizontalValue { get; private set; }
     public bool UpButtonPressed { get; private set; }
     public bool DownButtonPressed { get; private set; }
+    public bool SpaceButtonPressed { get; private set; }
 
     private void Awake()
     {
@@ -20,5 +21,6 @@ public class InputManager : MonoBehaviour
         HorizontalValue = Input.GetAxisRaw("Horizontal");
         UpButtonPressed = Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W);
         DownButtonPressed = Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S);
+        SpaceButtonPressed = Input.GetKeyUp(KeyCode.Space);
     }
 }

@@ -22,7 +22,8 @@ public class WallMoving : MonoBehaviour
     void MoveWall()
     {
         stepTimer += Time.deltaTime;
-        if (stepTimer > stepLimit)
+        if (stepTimer > stepLimit
+            )
         {
             stepTimer = 0f;
             wallTransform.localPosition += Vector3.back * step;

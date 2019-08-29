@@ -15,25 +15,36 @@ public class MainBlockData : MonoBehaviour, IFigureProp
     }
     
     public Material figureMaterial { get; private set; }
+    public Transform myTransform { get; private set; }
+    public WallData wallData { get; private set; }
+    public bool isIGiveList { get; private set; }
 
-    public List<IBlockRenderer> myNeightbors { get; private set; }
-
+    public List<IBlockProp> myNeightbors { get; private set; }
+ 
 
     void Awake()
     {
+        myTransform = gameObject.transform;
+        wallData = GameObject.FindGameObjectWithTag("Wall").GetComponentInChildren<WallData>();
+
+
         GetNeightborsToList();
         GetMaterialForBlocks();
         SetMaterialToBlocks();
+
     }
 
-    //void Update()
-    //{
-       
-    //}
+    private void Update()
+    {
+        if (GetComponent<InputManager>().enabled == false && !isIGiveList)
+            GiveListOf_MAR_Blocks();
+    }
+
+
 
     public void GetNeightborsToList()
     {
-        myNeightbors = new List<IBlockRenderer>(GetComponentsInChildren<IBlockRenderer>());
+        myNeightbors = new List<IBlockProp>(GetComponentsInChildren<IBlockProp>());
     }
 
     public void GetMaterialForBlocks()
@@ -49,9 +60,13 @@ public class MainBlockData : MonoBehaviour, IFigureProp
         }
     }
 
-    public void AddToWall()
+    public void GiveListOf_MAR_Blocks()
     {
-
+        foreach (var obj in myNeightbors)
+        {
+            Transform trans = obj.myTransform;
+            wallData.figureBlocks.Add(trans);
+        }
+        isIGiveList = true;
     }
-
 }

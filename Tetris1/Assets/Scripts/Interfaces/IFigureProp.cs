@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IFigureProp : IBlockRenderer
+public interface IFigureProp : IBlockProp
 { 
     Material figureMaterial { get; }
 
-    List<IBlockRenderer> myNeightbors { get; }
+    List<IBlockProp> myNeightbors { get; }
 
     void GetNeightborsToList();
     void GetMaterialForBlocks();
     void SetMaterialToBlocks();
-    void AddToWall();
 }
 
