@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IFigureProp : IBlockProp, IInputGetter
-{
-    RotationLook rotationLook { get; }
+public interface IFigureProp : IBlockRenderer
+{ 
     Material figureMaterial { get; }
 
-    List<IBlockProp> myNeightbors { get; }
+    List<IBlockRenderer> myNeightbors { get; }
 
     void GetNeightborsToList();
     void GetMaterialForBlocks();
@@ -15,10 +14,3 @@ public interface IFigureProp : IBlockProp, IInputGetter
     void AddToWall();
 }
 
-public enum RotationLook
-{
-    forward,
-    right,
-    backwards,
-    left
-}

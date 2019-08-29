@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IBlockProp
+public interface IBlockRenderer
 {
-    Transform myTransform { get; }
     MeshRenderer myRenderer { get; }
 }

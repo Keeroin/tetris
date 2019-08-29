@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 4408958395124188198}
   - component: {fileID: 4408958395124188199}
   - component: {fileID: 2621199734954651230}
+  - component: {fileID: 7442226051929016604}
   m_Layer: 0
   m_Name: TFigureCube
   m_TagString: Untagged
@@ -343,6 +344,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26c2646b3c2d55042b0e8ad113001a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7442226051929016604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4408958395124188216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3878123051444ee4986635b0ed10ed3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4408958395140503850

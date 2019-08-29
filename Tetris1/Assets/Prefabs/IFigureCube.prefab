@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3773338165522149693}
   - component: {fileID: 3773338165522149692}
   - component: {fileID: 4221680008271159124}
+  - component: {fileID: 2414177766114735364}
   m_Layer: 0
   m_Name: IFigureCube
   m_TagString: Untagged
@@ -133,6 +134,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26c2646b3c2d55042b0e8ad113001a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2414177766114735364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3773338165522149683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3878123051444ee4986635b0ed10ed3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3773338165920718633

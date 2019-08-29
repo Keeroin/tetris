@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Block : MonoBehaviour, IBlockProp
+public class Block : MonoBehaviour, IBlockRenderer
 {
     [SerializeField]
     private MeshRenderer MRenderer;
@@ -10,12 +10,5 @@ public class Block : MonoBehaviour, IBlockProp
     {
         get { return MRenderer; }
         set { MRenderer = value; }
-    }
-
-    public Transform myTransform { get; private set; }
-
-    private void Awake()
-    {
-        myTransform = gameObject.transform;
     }
 }

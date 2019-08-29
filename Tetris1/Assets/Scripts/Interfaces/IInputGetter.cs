@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface IInputGetter
 {
-    void GetInputValuesAndMove();
+    void MoveWithInputValues();
+    void RotateWithInputValues();
 }
